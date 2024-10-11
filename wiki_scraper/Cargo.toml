@@ -1,0 +1,15 @@
+[package]
+name = "wiki_scraper"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "gzip", "brotli", "stream"] }
+tokio = { version = "1", features = ["full"] }
+rusqlite = { version = "0.28.0", features = ["bundled"] }
+chrono = "0.4"
+flate2 = "1.0"
+scraper = "0.13.0"
+anyhow = "1.0"
+regex = "1.5"
+lazy_static = "1.4"
